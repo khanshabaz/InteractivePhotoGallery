@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InterActive Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="logo">InteractivePhotogallery</h1>
+    <div class="full-Img" id="fullImgBox">
+        <img src="./images/interactivegallery/img1.jpg" alt="img-1" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+    <div class="img-gallery">
+        <img src="./images/interactivegallery/img1.jpg" alt="img-1" onclick="openFullImg(this.src)">
+        <img src="./images/interactivegallery/img2.jpg" alt="img-1" onclick="openFullImg(this.src)">
+        <img src="./images/interactivegallery/img3.jpg" alt="img-1" onclick="openFullImg(this.src)">
+        <img src="./images/interactivegallery/img4.jpg" alt="img-1" onclick="openFullImg(this.src)">
+        <img src="./images/interactivegallery/img5.jpg" alt="img-1" onclick="openFullImg(this.src)">
+        <img src="./images/interactivegallery/img6.jpg" alt="img-1" onclick="openFullImg(this.src)">
+        <img src="./images/interactivegallery/img7.jpg" alt="img-1" onclick="openFullImg(this.src)">
+        <img src="./images/interactivegallery/img8.jpg" alt="img-1" onclick="openFullImg(this.src)">
+    </div>
+
+    <script>
+        var fullImgBox=document.getElementById("fullImgBox");
+
+        function openFullImg(image){
+            fullImgBox.style.display='flex';
+            fullImg.src=image;
+        }
+
+        function closeFullImg(image){
+            fullImgBox.style.display='none';
+        }
+    </script>
+</body>
+</html>
